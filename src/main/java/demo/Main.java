@@ -9,8 +9,11 @@ public class Main {
         ApplicationContext context = new ClassPathXmlApplicationContext("Spring.xml");
 
 //        Doctor doctor = new Doctor();
-        Staff staff = context.getBean(Nurse.class);
+        Doctor staff = context.getBean(Doctor.class);
         staff.assist();
+//        staff.getQualification();
+//
+//        System.out.println( staff.getQualification());
 
     }
 }
